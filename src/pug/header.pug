@@ -1,0 +1,61 @@
+header.header
+    .header__top
+        .container
+            .search
+                form.form-inline.my-2.my-lg-0
+                    input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+                    button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+                .button Search
+
+    .header__nav
+        .container
+            nav.navbar.navbar-expand-lg.navbar-light
+                .logo.col-8.col-md-2
+                    a.navbar-brand(href='/')
+                        img(src="img/logo_winnis-cura-casa.png")
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.mr-auto
+                        li.nav-item.active
+                            a.nav-link(href='/')
+                                i.icon-home
+                                | Home
+                                span.sr-only (current)
+
+                        li.nav-item.dropdown
+                            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                | Home Care
+                            .dropdown-menu(aria-labelledby='navbarDropdown')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                .dropdown-divider
+                                a.dropdown-item(href='#') Something else here
+                        li.nav-item.dropdown
+                            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                | Personal Care
+                            .dropdown-menu(aria-labelledby='navbarDropdown')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                .dropdown-divider
+                                a.dropdown-item(href='#') Something else here
+                        li.nav-item.dropdown
+                            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                | Why choose Winni’s
+                            .dropdown-menu(aria-labelledby='navbarDropdown')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                .dropdown-divider
+                                a.dropdown-item(href='#') Something else here
+                        li.nav-item
+                            a.nav-link(href='#') Stories about our Experts
+                        li.nav-item
+                            a.nav-link(href='#') News
+                        li.nav-item
+                            a.nav-link(href='#') Faq
+                        li.nav-item
+                            a.nav-link(href='#') Contact us
+
+
+
+

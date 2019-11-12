@@ -1,0 +1,92 @@
+$green = #60b035
+$green-light = #60b03585
+
+.header
+  background-color: #fff
+  .scroll
+    position: fixed
+    top 0
+    left 0
+    right 0
+    background: #fff
+    z-index 999
+    .navbar
+      height: 50px
+      .logo a  img
+        width: 100px
+      @media (max-width: 991px)
+        .logo
+          padding 0 0 0 10px
+      .nav-item
+        height: 50px
+
+  &__top
+    height: 35px
+    line-height: 35px
+    background-color $green
+    .search
+      display: flex
+      justify-content: flex-end
+      form
+        display: none
+        background-color: #fff;
+      //a
+      //  color #ffffff
+      //  text-decoration: none
+      //img.icon-search
+      //  color #ffffff
+      input
+        margin-top: -3px
+      .btn
+        margin-top: -3px !important
+
+  &__nav
+    @media (max-width: 991px)
+      .container
+        max-width: 100% !important
+        padding 0
+    .navbar-collapse
+      ul
+        @media (max-width: 991px)
+          border 2px solid #d0ead0
+    .navbar-nav li a
+      @media (max-width: 991px)
+        border-bottom 1px solid #d0ead0
+    .navbar
+      padding: 0
+      .nav-item
+        font-size: 13px
+        text-transform: uppercase
+        height: 100px
+        .dropdown-toggle
+          &:after
+            display: none
+        .nav-link
+          display: flex
+          align-items: center
+          height: 100%
+          position: relative
+          &:hover
+            border-radius 16px 0
+            background $green-light
+          &:before
+            border-right 1px solid #ddd
+            content ""
+            display block
+            height 20%
+            position absolute
+            right 0
+            top 40%
+
+  .logo
+    padding 10px
+    margin-right 20px
+    a
+      img
+        width: 150px
+
+.navbar-light .navbar-toggler
+  border none
+
+
+
